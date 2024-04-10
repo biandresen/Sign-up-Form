@@ -78,5 +78,26 @@ a[href*="22"] {
   width: 65%;
   height: 100vh;
   background-color: rgb(214, 217, 224);
-  border-left: 12px solid rgb(66, 50, 24);
+  box-shadow: -6px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+.formHeader {
+  background-color: rgb(214, 217, 224);
+  width: 100%;
+  height: 30vh;
+}
+
+.formField {
+  background-color: rgb(245, 245, 245);
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+  height: 40vh;
+}
+
+.formFooter {
+  background-color: rgb(214, 217, 224);
+  width: 100%;
+  height: 30vh;
 }
