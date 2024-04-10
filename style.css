@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.photoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 35%;
+  background: red;
+}
+
+.logoContainer {
+  height: 10%;
+  width: 100%;
+  background-color: blue;
+}
+
+.photoTextContainer {
+  width: 100%;
+  height: 10%;
+  position: relative;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(40, 220, 20, 0.3);
+}
+
+a[href*="22"] {
+  text-decoration: none;
+  color: black;
+}
+
+.photoCreditContainer {
+  width: 100%;
+  height: 3%;
+  text-align: center;
+  background: green;
+}
