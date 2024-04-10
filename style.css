@@ -1,13 +1,18 @@
 * {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+}
+
 @font-face {
   font-family: "Norse";
-  src: url("Norse-Bold.woff2") format("woff2"),
-    url("Norse-Bold.woff") format("woff");
+  src: url("fonts/Norse-Bold.woff2") format("woff2"),
+    url("fonts/Norse-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -15,7 +20,7 @@
 
 img[src*="vegan"] {
   height: 100%;
-  margin: 2%;
+  margin-left: 20px;
 }
 
 .photoContainer {
@@ -32,19 +37,27 @@ img[src*="vegan"] {
 .logoContainer {
   height: 100px;
   width: 100%;
+  margin-top: 10px;
+}
+
+.logoHeader {
+  font-family: "Norse", sans-serif;
+  font-size: calc(5.5rem + 1.5vw);
+  margin-left: 140px;
+  color: rgb(66, 50, 24);
 }
 
 .photoTextContainer {
   width: 100%;
   height: 6vw;
   position: relative;
-  top: 37.5%;
+  top: 36.5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: calc(0.4rem + 0.6vw);
-  background: rgba(40, 220, 20, 0.5);
+  background: rgb(0, 128, 0, 0.4);
 }
 
 a[href*="22"] {
@@ -57,4 +70,13 @@ a[href*="22"] {
   height: 2%;
   text-align: center;
   font-size: calc(0.5rem + 0.25vw);
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.formContainer {
+  width: 65%;
+  height: 100vh;
+  background-color: rgb(214, 217, 224);
+  border-left: 12px solid rgb(66, 50, 24);
 }
