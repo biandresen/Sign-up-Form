@@ -47,28 +47,71 @@
         <h3>Let's do this!</h3>
         <form action="" method="get">
           <label for="firstName"
-            >FIRST NAME <input type="text" id="firstName" name="firstName"
+            >FIRST NAME *
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="John"
+              pattern="^[a-zA-z- ]+$"
+              autofocus
+              required
           /></label>
 
           <label for="lastName"
-            >LAST NAME <input type="text" id="lastName" name="lastName"
+            >LAST NAME *
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Johnson"
+              minlength="1"
+              maxlength="20"
+              required
           /></label>
 
           <label for="email"
-            >EMAIL <input type="email" id="email" name="email"
+            >EMAIL *<input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@server.com"
+              minlength="1"
+              maxlength="20"
+              required
           /></label>
 
           <label for="phoneNumber"
-            >PHONE NUMBER <input type="tel" id="phoneNumber" name="phoneNumber"
+            >PHONE NUMBER
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              placeholder="+00 111 00 111"
+              minlength="1"
+              maxlength="20"
+              pattern="^[0-9+ ]+$"
           /></label>
 
           <label for="pwd"
-            >PASSWORD <input type="password" id="pwd" name="password"
+            >PASSWORD *<input
+              type="password"
+              id="pwd"
+              name="password"
+              minlength="4"
+              maxlength="20"
+              required
           /></label>
 
           <label for="confirmPwd"
-            >CONFIRM PASSWORD
-            <input type="password" id="confirmPwd" name="confirmPwd"
+            >CONFIRM PASSWORD *
+            <input
+              type="password"
+              id="confirmPwd"
+              name="confirmPwd"
+              minlength="4"
+              maxlength="20"
+              required
           /></label>
         </form>
       </div>
