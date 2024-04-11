@@ -15,7 +15,7 @@
       </div>
       <div class="photoTextContainer">
         Learn how to thrive on a plant-based diet:
-        <p>
+        <p class="challengeText">
           "Challenge22" - 22 day challenge with a mentor to guide you for free!
         </p>
         <a href="https://challenge22.com/">Click here to visit</a>
@@ -36,16 +36,16 @@
     </div>
     <div class="formContainer">
       <header class="formHeader">
+        <p class="warningText">*This is not a real online service!*</p>
         <h1>
-          This is not a real online service! You know deep down that you should
-          live healthier. Start with your diet. Eat plant-based! Sign up to get
-          started.
+          You know deep down that you should live healthier. Start with your
+          diet. Eat plant-based! Sign up to get started.
         </h1>
         <h2>You <i>know</i> you want to.</h2>
       </header>
       <div class="formField">
         <h3>Let's do this!</h3>
-        <form action="" method="get">
+        <form action="" method="get" id="signUpForm">
           <label for="firstName"
             >FIRST NAME *
             <input
@@ -53,7 +53,7 @@
               id="firstName"
               name="firstName"
               placeholder="John"
-              pattern="^[a-zA-z- ]+$"
+              pattern="[^0-9]+[A-Za-z ]+"
               autofocus
               required
           /></label>
@@ -90,7 +90,7 @@
               placeholder="+00 111 00 111"
               minlength="1"
               maxlength="20"
-              pattern="^[0-9+ ]+$"
+              pattern="[0-9+ ]+"
           /></label>
 
           <label for="pwd"
@@ -115,7 +115,10 @@
           /></label>
         </form>
       </div>
-      <footer class="formFooter"></footer>
+      <footer class="formFooter">
+        <button type="submit" form="signUpForm">Create Account</button>
+        <h3>Already have an account? <a href="">Log in</a></h3>
+      </footer>
     </div>
   </body>
 </html>

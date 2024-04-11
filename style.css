@@ -49,7 +49,7 @@ img[src*="vegan"] {
 
 .photoTextContainer {
   width: 100%;
-  height: 6vw;
+  height: 100px;
   position: relative;
   top: 36.5%;
   display: flex;
@@ -58,11 +58,7 @@ img[src*="vegan"] {
   align-items: center;
   font-size: calc(0.4rem + 0.6vw);
   background: rgb(0, 128, 0, 0.4);
-}
-
-a[href*="22"] {
-  /* text-decoration: none;
-  color: black; */
+  line-height: 22px;
 }
 
 .photoCreditContainer {
@@ -86,35 +82,42 @@ a[href*="22"] {
   flex-direction: column;
   background-color: rgb(214, 217, 224);
   width: 100%;
-  height: 30vh;
+  height: 300px;
   color: rgba(0, 0, 0, 0.9);
 }
 
 .formField {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(230, 230, 230);
   box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   position: relative;
   width: 100%;
-  height: 40vh;
+  height: 380px;
 }
 
 .formFooter {
   background-color: rgb(214, 217, 224);
   width: 100%;
-  height: 30vh;
+  height: 250px;
 }
 
 h1 {
   margin: 100px 200px 15px 50px;
+  color: rgba(0, 0, 0, 0.85);
+  width: 850px;
+  min-width: 700px;
 }
 
 h2 {
   margin-left: 50px;
   margin-bottom: 0px;
+  color: rgba(0, 0, 0, 0.85);
 }
 
-.formField {
+p.warningText {
+  margin-left: 50px;
+  position: relative;
+  top: 50px;
 }
 
 form {
@@ -126,6 +129,7 @@ form {
   flex-wrap: wrap;
   column-gap: 260px;
   row-gap: 45px;
+  min-width: 900px;
 }
 
 h3 {
@@ -133,6 +137,7 @@ h3 {
   margin-left: 50px;
   position: relative;
   top: 25px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 label {
@@ -156,12 +161,19 @@ input:focus {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-input:invalid {
+input[type*="e"]:user-invalid {
   border: 2px solid red;
   background-color: rgba(255, 0, 0, 0.2);
 }
 
-input:required {
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+button[type="submit"] {
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-left: 50px;
+  width: 200px;
+  height: 50px;
+  margin-top: 35px;
+  background-color: rgb(0, 128, 0, 0.85);
+  color: white;
+  border-radius: 8px;
 }
