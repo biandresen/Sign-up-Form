@@ -38,7 +38,7 @@ img[src*="vegan"] {
   height: 100px;
   width: 100%;
   position: relative;
-  top:680px;
+  top: 680px;
 }
 
 .logoHeader {
@@ -180,9 +180,18 @@ button[type="submit"] {
   border-radius: 8px;
 }
 
+button[type="submit"]:hover {
+  background-color: rgba(0, 85, 0, 0.85);
+  cursor: pointer;
+}
+
 #errorMessage {
   margin-left: 50px;
   margin-top: 5px;
   font-size: 1rem;
   font-weight: 800;
+}
+
+a {
+  text-decoration: none;
 }
