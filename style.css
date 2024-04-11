@@ -161,7 +161,7 @@ input:focus {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-input[type*="e"]:user-invalid {
+input:user-invalid {
   border: 2px solid red;
   background-color: rgba(255, 0, 0, 0.2);
 }
