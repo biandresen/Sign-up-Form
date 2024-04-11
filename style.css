@@ -37,13 +37,15 @@ img[src*="vegan"] {
 .logoContainer {
   height: 100px;
   width: 100%;
-  margin-top: 10px;
+  position: relative;
+  top:680px;
 }
 
 .logoHeader {
+  position: absolute;
   font-family: "Norse", sans-serif;
   font-size: calc(5.5rem + 1.5vw);
-  margin-left: 140px;
+  left: calc(11vw);
   color: rgb(66, 50, 24);
 }
 
