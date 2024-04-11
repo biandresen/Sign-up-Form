@@ -71,7 +71,7 @@ img[src*="vegan"] {
 /* ------------------------------------------------------------------------------- */
 
 .formContainer {
-  width: 65%;
+  width: 70%;
   height: 100vh;
   background-color: rgb(214, 217, 224);
   box-shadow: -6px 0px 5px rgba(0, 0, 0, 0.15);
@@ -176,4 +176,11 @@ button[type="submit"] {
   background-color: rgb(0, 128, 0, 0.85);
   color: white;
   border-radius: 8px;
+}
+
+#errorMessage {
+  margin-left: 50px;
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: 800;
 }
